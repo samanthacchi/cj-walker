@@ -1,0 +1,181 @@
+html {
+  font-family: courier;
+  font-size: 10px;
+}
+section, article, aside, footer, header, nav {
+  display: block;
+}
+section {
+  overflow: auto;
+}
+body {
+  margin: 0;
+}
+
+/*colors*/
+.gray-back {
+  background-color: rgb(255, 255, 255);
+}
+.sepia-back {
+  background-color: rgba(233,184,134, 0.75);
+}
+.white-text {
+  color: white;
+}
+.shadow-text {
+  text-shadow: 3px 3px #000000;
+}
+/* navbar*/
+nav {
+  position: fixed;
+  margin: 0;
+  filter: none;
+}
+nav > a  , nav > p {
+  background-color: transparent;
+  text-decoration: none;
+}
+nav > a {
+  color: rgb(153, 153, 153);
+  padding: 10px 20px;
+  font-size: 1.5rem;
+}
+nav > a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+nav > p {
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 2px;
+  padding: 0 20px; 
+}
+nav , footer {
+  align-items: center;
+  background-color: rgb(47,47,47);
+  display: flex;
+  justify-content: center;
+  min-height: 50px;
+  width: 100%;
+  z-index: 3;
+  font-size: 1.15rem;
+}
+/* intro*/
+.hero {
+  background: url(https://upload.wikimedia.org/wikipedia/commons/a/ae/MadameCJWalkerdrivingautomoblie.png) no-repeat fixed;
+  background-size: cover;
+  height: 85vh;
+  width: 100%;
+  margin-top: 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: 1; 
+}
+.hero h1 {
+  padding-top: 12%;
+  text-align: center;
+  z-index: 2;
+  filter: none;
+  font-size: 9rem;
+  margin-top: 0;
+}
+.hero h2 {
+  text-align: center;
+  padding-bottom: 0;
+  font-size: 3rem;
+}
+
+/*body*/
+section {
+  justify-content: center;
+  height: 40vh;
+  padding: 6rem;
+}
+h2 {
+  font-size: 4rem;
+  justify-content: center;
+  height: 1vh;
+  padding: 6rem;
+  margin: 0;
+}
+section p {
+  font-size: 2rem;
+}
+article {
+  width: 100%;
+}
+#early-life {
+  
+}
+#gallery {
+  height: 65vh;
+}
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  padding-top: 3%;
+}
+.column {
+  margin: auto;
+}
+.column p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+#career {
+  
+}
+#activism {
+  
+}
+#source-info {
+  background-color: rgb(145,85,26);
+  height: 5vh;
+  text-align: center;
+}
+
+/*footer*/
+footer {
+
+}
+
+/*images*/
+img {
+  height: 300px;
+}
+.image-caption {
+  font-weight: bold;
+}
+
+/*responsive*/
+@media screen and (max-width: 600px) {
+  .column {
+        width: 100%;
+    }
+  .row {
+    grid-template: none;
+  }
+} 
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 3px;
+  }
+  img {
+    height: 200px;
+  }
+  .column {
+        width: 100%;
+    }
+  .row {
+    grid-template: none;
+  }
+}
+
+@media screen and (max-width: 11000px) {
+  html {
+    font-size: 8px;
+  }
+}
+  
